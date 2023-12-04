@@ -3,7 +3,7 @@ import openai
 
 st.title("Chat Bot Integrated with Open AI")
 
-open.api_key = st.secrets["OPENAI_API_KEY"]
+open.api_key = st.secrets("OPENAI_API_KEY")
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
