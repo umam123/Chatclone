@@ -26,7 +26,7 @@ if prompt:
 # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-with st.chat_message("assistant"):
+    with st.chat_message("assistant"):
     message_placeholder = st.empty()
     full_response =
     for response in openai.ChatCompletion.create(
